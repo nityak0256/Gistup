@@ -24,7 +24,6 @@ export const NoticesView: React.FC = () => {
   } = useApp();
 
   const [categoryFilter, setCategoryFilter] = useState<string>('All');
-  const [colorFilter, setColorFilter] = useState<string>('All');
   const [searchQuery, setSearchQuery] = useState('');
   const [isFormOpen, setIsFormOpen] = useState(false);
 
@@ -76,6 +75,8 @@ export const NoticesView: React.FC = () => {
   });
 
   const categories = ['All', 'Deadline', 'Exam', 'Timetable', 'General Info'];
+
+  const [colorFilter, setColorFilter] = useState<string>('All');
 
   const colorOptions: { color: NoticeColor; label: string; desc: string; chipBg: string }[] = [
     { color: 'red', label: 'Urgent', desc: 'Red = Urgent', chipBg: 'bg-rose-500' },
