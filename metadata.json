@@ -1,0 +1,6 @@
+{
+  "name": "GistUp",
+  "description": "Get the gist. Miss nothing. Student assistant for busy college WhatsApp groups.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
